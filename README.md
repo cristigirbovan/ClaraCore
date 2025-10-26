@@ -37,7 +37,7 @@ Download the latest release from the [Releases page](https://github.com/cristigi
 ### System Requirements
 - **Operating System**: Windows 10+
 - **Java Runtime**: JDK 17 or higher (embedded in the application)
-- **Memory**: 4GB RAM minimum, 8GB recommended
+- **Memory**: 2GB RAM minimum, 4GB recommended
 - **Disk Space**: 200MB for installation
 
 ### First Launch
