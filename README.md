@@ -27,7 +27,6 @@ ClaraCore is a modern, feature-rich HTTP client specifically designed for Java d
 - **Request Templates** - Quick-start templates for common request patterns
 - **Keyboard Shortcuts** - Efficient keyboard-driven workflow
 - **Dark/Light Theme** - Comfortable UI for extended coding sessions
-- **Cross-Platform** - Windows, macOS, and Linux support
 
 ## 📦 Installation
 
@@ -36,13 +35,13 @@ Download the latest release from the [Releases page](https://github.com/cristigi
 - **Windows**: `ClaraCore-1.0.0-portable.exe`
 
 ### System Requirements
-- **Operating System**: Windows 10+, macOS 10.13+, or Linux (Ubuntu 18.04+)
-- **Java Runtime**: JDK 21 or higher (embedded in the application)
+- **Operating System**: Windows 10+
+- **Java Runtime**: JDK 17 or higher (embedded in the application)
 - **Memory**: 4GB RAM minimum, 8GB recommended
 - **Disk Space**: 200MB for installation
 
 ### First Launch
-1. Extract/Install the application
+1. Extract the application
 2. Launch ClaraCore
 3. The Java sidecar will start automatically on first run
 4. You're ready to make your first request!
@@ -178,7 +177,7 @@ Create mock endpoints for testing without backend dependencies:
    }
    ```
 4. Click "Start Server"
-5. Mock server runs on `http://localhost:3001`
+5. Mock server runs on `http://localhost:47823/api/mock`
 
 **Use cases:**
 - Frontend development without backend
