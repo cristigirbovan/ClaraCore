@@ -220,7 +220,7 @@ Generate production-ready Java code from any request:
 1. Configure your request completely
 2. Click "Code" button in request panel
 3. Select template:
-   - **Java 11 HttpClient** (modern, async)
+   - **Java WebClient** (modern, async)
    - **OkHttp** (popular HTTP client)
    - **Spring RestTemplate** (Spring Boot)
    - **Apache HttpClient** (legacy support)
