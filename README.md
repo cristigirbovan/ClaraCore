@@ -15,11 +15,13 @@ ClaraCore is a modern, feature-rich HTTP client specifically designed for Java d
 - **Global Search** - Fuzzy search across collections, requests, environments, and history
 
 ### Advanced Features
+- **AI Assistant (Embabel-Powered)** - Five specialized AI agents for API testing, debugging, performance analysis, security scanning, and documentation generation
 - **Built-in Mock Server** - Create mock endpoints with custom responses for testing
 - **Google Cloud Pub/Sub** - Native support for Pub/Sub topics and subscriptions
 - **Collection Runner** - Execute entire collections or folders with environment-specific variables
 - **Code Generation** - Generate ready-to-use Java code snippets from requests
 - **Postman Compatibility** - Import/export Postman collections and environments
+- **Proxy Support** - HTTP, SOCKS4, and SOCKS5 proxies with authentication (including Tor/.onion sites)
 
 ### Developer Experience
 - **Tab-Based Interface** - Work on multiple requests simultaneously
@@ -139,6 +141,57 @@ System.out.println("All tests passed!");
 ```
 
 ## 🔧 Core Features
+
+### AI Assistant (Embabel Integration)
+
+ClaraCore includes an AI-powered assistant built on [Embabel](https://github.com/embabel) - an awesome and fun agent framework that makes building intelligent agents a joy! Five specialized agents are available:
+
+**Available Agents:**
+- **API Testing Agent** - Generates comprehensive AI-powered tests for endpoints
+- **API Debug Agent** - Diagnoses errors and provides actionable fix recommendations
+- **Performance Analysis Agent** - Analyzes endpoint performance and suggests optimizations
+- **Security Scan Agent** - Identifies vulnerabilities and provides remediation guidance
+- **Documentation Generator Agent** - Creates comprehensive API documentation automatically
+
+**Configuration:**
+1. Open Settings → AI
+2. Configure your AI model and API key (supports Anthropic Claude and OpenAI-compatible endpoints)
+3. Click "Ask AI" in any request to get intelligent assistance
+
+**Use Cases:**
+- Automatic test case generation
+- Debugging complex API errors
+- Performance bottleneck identification
+- Security vulnerability scanning
+- API documentation creation
+
+### Proxy Support
+
+Route requests through proxy servers for enterprise environments, VPNs, and anonymity networks:
+
+**Supported Proxy Types:**
+- **HTTP Proxy** - Standard HTTP proxy with Basic authentication
+- **SOCKS4** - Legacy SOCKS protocol
+- **SOCKS5** - Modern SOCKS protocol (recommended for Tor, VPN, corporate proxies)
+
+**Configuration:**
+1. Open Settings → Network
+2. Enable "Enable Proxy"
+3. Select proxy type and enter server (e.g., `localhost:9050` for Tor)
+4. Add authentication credentials if required
+
+**Tor & .onion Sites:**
+To access .onion sites:
+1. Install and run Tor Browser (starts Tor service on localhost:9050)
+2. Configure ClaraCore: SOCKS5 proxy → `localhost:9050`
+3. Make requests to .onion addresses
+
+**Common Use Cases:**
+- Corporate firewall bypass
+- SSH tunneling: `ssh -D 1080 user@server`
+- Tor anonymity network access
+- VPN proxy endpoints
+- Development environment routing
 
 ### Collections & Organization
 
@@ -380,15 +433,20 @@ Access via `Ctrl/Cmd + ,`:
 - Auto-format JSON/XML
 
 **Network:**
-- Proxy settings
+- Proxy settings (HTTP, SOCKS4, SOCKS5)
+- Proxy authentication (username/password)
 - SSL certificate validation
 - Custom CA certificates
+
+**AI:**
+- AI model selection (Claude, GPT, custom endpoints)
+- API key configuration
+- Agent behavior customization
 
 ## 🤝 Support & Community
 
 ### Getting Help
 
-- **Documentation**: [GitHub Wiki](https://github.com/cristigirbovan/claracore/wiki)
 - **Issues**: [GitHub Issues](https://github.com/cristigirbovan/claracore/issues)
 - **Email**: cristi.girbovan@gmail.com
 
@@ -423,96 +481,10 @@ ClaraCore is open source software licensed under the **Apache License 2.0**.
 
 See the [LICENSE](LICENSE) file for full details.
 
-## 🤝 Contributing
+## 🙏 Acknowledgments
 
-We welcome contributions from the community! Here's how you can help:
+ClaraCore is powered by [Embabel](https://github.com/embabel), an awesome and fun agent framework that makes building intelligent AI agents a joy! The five specialized agents in ClaraCore (API Testing, Debugging, Performance Analysis, Security Scanning, and Documentation Generation) are built on Embabel's powerful GOAP (Goal-Oriented Action Planning) runtime.
 
-**Ways to Contribute:**
-- 🐛 Report bugs via [GitHub Issues](https://github.com/cristigirbovan/claracore/issues)
-- 💡 Suggest features and improvements
-- 📝 Improve documentation
-- 🔧 Submit pull requests with bug fixes or new features
-- ⭐ Star the repository to show your support
-
-**Contribution Guidelines:**
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-**Development Setup:**
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/claracore.git
-cd claracore
-
-# Frontend (Electron + React)
-cd claracore-app
-npm install
-npm run dev
-
-# Backend (Java Spring Boot)
-cd ../claracore-java
-mvn clean install
-mvn spring-boot:run
-```
-
-**Code Style:**
-- Frontend: Follow existing TypeScript/React patterns
-- Backend: Follow Java best practices and Spring Boot conventions
-- Write meaningful commit messages
-- Add tests for new features
-- Update documentation as needed
-
-For questions about contributing, email: contribute@claracore.com
-
-## 🔐 Privacy & Security
-
-- **Local-First**: All data stored locally on your machine
-- **No Telemetry**: We don't track or collect usage data
-- **Secure Storage**: Sensitive data encrypted at rest
-- **No Cloud Sync**: Your API keys never leave your computer
-- **Open Source**: Fully transparent code you can audit
-- **Open Format**: Export your data anytime
-
-## 📋 Changelog
-
-### Version 1.0.0 (Current)
-
-**Features:**
-- Complete HTTP client with all methods
-- Java-based pre-request and test scripts
-- Environment management with variable substitution
-- Collections with nested folders
-- Built-in mock server
-- Google Cloud Pub/Sub support
-- Collection runner
-- Code generation (Java)
-- Postman import/export
-- Global search
-- Request history
-- Keyboard shortcuts
-- Dark/Light themes
-
-**Coming Soon:**
-- GraphQL support
-- WebSocket testing
-- API documentation generator
-- Team collaboration features
-- Cloud sync (optional)
-- Custom plugins/extensions
-
----
-
-## 🚀 Get Started Now
-
-Download ClaraCore and streamline your API development workflow today!
-
-[Download for Windows](https://github.com/cristigirbovan/claracore/releases) |
-
----
-
-**Built with ❤️ for Java Developers**
+If you're interested in building AI agents, check out Embabel - it's a great framework to work with!
 
 © 2025 ClaraCore. Licensed under Apache 2.0.
