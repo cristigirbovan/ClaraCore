@@ -15,13 +15,17 @@ ClaraCore is a modern, feature-rich HTTP client specifically designed for Java d
 - **Global Search** - Fuzzy search across collections, requests, environments, and history
 
 ### Advanced Features
-- **AI Assistant (Embabel-Powered https://github.com/embabel)** - Five specialized AI agents for API testing, debugging, performance analysis, security scanning, and documentation generation
+- **AI Assistant (Embabel-Powered** - Five specialized AI agents for API testing, debugging, performance analysis, security scanning, and documentation generation
 - **Built-in Mock Server** - Create mock endpoints with custom responses for testing
 - **Google Cloud Pub/Sub** - Native support for Pub/Sub topics and subscriptions
 - **Collection Runner** - Execute entire collections or folders with environment-specific variables
 - **Code Generation** - Generate ready-to-use Java code snippets from requests
 - **Postman Compatibility** - Import/export Postman collections and environments
 - **Proxy Support** - HTTP, SOCKS4, and SOCKS5 proxies with authentication (including Tor/.onion sites)
+
+## 🙏 Acknowledgments
+ClaraCore is powered by [Embabel](https://github.com/embabel), an awesome and fun agent framework that makes building intelligent AI agents a joy! The five specialized agents in ClaraCore (API Testing, Debugging, Performance Analysis, Security Scanning, and Documentation Generation) are built on Embabel's powerful GOAP (Goal-Oriented Action Planning) runtime.
+So....if you're interested in building AI agents, check out Embabel - it's a great framework to work with!
 
 ### Developer Experience
 - **Tab-Based Interface** - Work on multiple requests simultaneously
@@ -480,11 +484,5 @@ ClaraCore is open source software licensed under the **Apache License 2.0**.
 - ✅ No restrictions on commercial use
 
 See the [LICENSE](LICENSE) file for full details.
-
-## 🙏 Acknowledgments
-
-ClaraCore is powered by [Embabel](https://github.com/embabel), an awesome and fun agent framework that makes building intelligent AI agents a joy! The five specialized agents in ClaraCore (API Testing, Debugging, Performance Analysis, Security Scanning, and Documentation Generation) are built on Embabel's powerful GOAP (Goal-Oriented Action Planning) runtime.
-
-If you're interested in building AI agents, check out Embabel - it's a great framework to work with!
 
 © 2025 ClaraCore. Licensed under Apache 2.0.
