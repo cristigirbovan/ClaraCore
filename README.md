@@ -15,7 +15,7 @@ ClaraCore is a modern, feature-rich HTTP client specifically designed for Java d
 - **Global Search** - Fuzzy search across collections, requests, environments, and history
 
 ### Advanced Features
-- **AI Assistant (Embabel-Powered)** - Five specialized AI agents for API testing, debugging, performance analysis, security scanning, and documentation generation
+- **AI Assistant (Embabel-Powered https://github.com/embabel)** - Five specialized AI agents for API testing, debugging, performance analysis, security scanning, and documentation generation
 - **Built-in Mock Server** - Create mock endpoints with custom responses for testing
 - **Google Cloud Pub/Sub** - Native support for Pub/Sub topics and subscriptions
 - **Collection Runner** - Execute entire collections or folders with environment-specific variables
