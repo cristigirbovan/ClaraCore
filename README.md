@@ -3,7 +3,7 @@
 **HTTP Client for Java Developers**
 
 ClaraCore is a modern, feature-rich HTTP client specifically designed for Java developers. Built with Java Spring Boot backend and React frontend, it provides a seamless experience for API testing, development, and debugging with native Java script execution.
-
+!(sample.png)
 ## 🚀 Key Features
 
 ### Core Functionality
