@@ -24,8 +24,26 @@ ClaraCore is a modern, feature-rich HTTP client specifically designed for Java d
 - **Proxy Support** - HTTP, SOCKS4, and SOCKS5 proxies with authentication (including Tor/.onion sites)
 
 ## 🙏 Acknowledgments
-ClaraCore is powered by [Embabel](https://github.com/embabel), an awesome and fun agent framework that makes building intelligent AI agents a joy! The five specialized agents in ClaraCore (API Testing, Debugging, Performance Analysis, Security Scanning, and Documentation Generation) are built on Embabel's powerful GOAP (Goal-Oriented Action Planning) runtime.
-So....if you're interested in building AI agents, check out Embabel - it's a great framework to work with!
+ClaraCore includes an AI-powered assistant built on [Embabel](https://github.com/embabel) - an awesome and fun agent framework that makes building intelligent agents a joy! Five specialized agents are available:
+
+**Available Agents:**
+- **API Testing Agent** - Generates comprehensive AI-powered tests for endpoints
+- **API Debug Agent** - Diagnoses errors and provides actionable fix recommendations
+- **Performance Analysis Agent** - Analyzes endpoint performance and suggests optimizations
+- **Security Scan Agent** - Identifies vulnerabilities and provides remediation guidance
+- **Documentation Generator Agent** - Creates comprehensive API documentation automatically
+
+**Configuration:**
+1. Open Settings → AI
+2. Configure your AI model and API key (supports Anthropic Claude and OpenAI-compatible endpoints)
+3. Click "Ask AI" in any request to get intelligent assistance
+
+**Use Cases:**
+- Automatic test case generation
+- Debugging complex API errors
+- Performance bottleneck identification
+- Security vulnerability scanning
+- API documentation creation
 
 ### Developer Experience
 - **Tab-Based Interface** - Work on multiple requests simultaneously
